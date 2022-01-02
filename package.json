@@ -7,21 +7,33 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+  },
+  "resolutions": {
+    "webpack": "^5.0.0"
   },
   "private": true,
   "dependencies": {
+    "@angular-architects/module-federation": "^14.0.1",
     "@angular/animations": "~13.1.0",
+    "@angular/cdk": "^13.1.1",
     "@angular/common": "~13.1.0",
     "@angular/compiler": "~13.1.0",
     "@angular/core": "~13.1.0",
     "@angular/forms": "~13.1.0",
+    "@angular/localize": "~13.1.0",
+    "@angular/material": "^13.1.1",
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^11.0.0",
     "@nrwl/angular": "13.4.1",
+    "bootstrap": "^4.6.1",
+    "jquery": "^3.6.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
+    "windowed-observable": "^1.0.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

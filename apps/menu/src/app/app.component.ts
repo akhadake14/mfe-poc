@@ -1,24 +1,16 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { Observable } from 'windowed-observable';
 
 @Component({
-  selector: 'mfe-poc-root',
+  selector: 'mfe-poc-menu',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'shell';
+  title = 'menu';
 
-  /**
-   *
-   */
-  constructor(private router: Router) {
+  navigateToPath(path:string){
     const observable = new Observable('menu');
-    observable.subscribe((path) =>{
-    this.router.navigate([path]);
-    });
-    
-
+    observable.publish(path);
   }
 }

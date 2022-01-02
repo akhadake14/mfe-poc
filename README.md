@@ -1,8 +1,8 @@
 
 
-# MfePoc
+# MfePoc (MicroFrontEnd)
 
-This project was generated using [Nx](https://nx.dev).
+This project was generated using [Nx](https://nx.dev) and [Module-Federation] (https://www.npmjs.com/package/@angular-architects/module-federation)
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
